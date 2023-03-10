@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T702RF3WG0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T702RF3WG0');
+</script>
+  <title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+font-family: Arial;
+padding: 15px;
+background-color: #00C9A7;
+background-image: url("https://github.com/JstMStudio/Teenager-Heroes/blob/Github-Pages/images/background2.jpeg?raw=true");
+background-repeat:no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+  background-size: cover;
+    background-position: center;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #abff03;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  color: #961509;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid red;
+  border-top: none;
+  text-align: center;
+  height: 100%;
+  background-color: black;
+background-repeat: no-repeat;
+background-size: 100% auto;
+    background-position: center;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 4px 4px 4px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #ffd3ec;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+  
+  .collapsible {
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align:  center;
+  outline: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.active, .collapsible:hover {
+  background-color: green;
+}
+
+.content1 {
+  padding: 18px;
+  display: none;
+  overflow: hidden;
+  background-color: yellow;
+  text-align: center;
+}
+
+.content1 ul {
+text-align: left;
+}
+
+img {
+float: left;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #bffc05;
+  border: none;
+  color: #f405fc;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 450px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   <h2 style="color:#c4f7fb;text-align:center;">Heróis adolescentes</h2>
+   <a href="index.html">Página inicial</a>
+   <a href="about.html">Sobre</a>
+   <a href="news.html">Notícias</a>
+   <a href="character.html">Personagem</a>
+   <a href="story.html">História</a>
+   <a href="location.html">Localização</a>
+   <a href="vehicles.html">Veículos</a>
+</div>
+
+<div class="tab">
+<button class="tablinks" onclick="openNav()">&#9776;</button>
+   <button class="tablinks" onclick="openCity(event, 'TH')">Heróis adolescentes</button>
+   <button class="tablinks" onclick="openCity(event, 'THC')">Heróis adolescentes: crianças</button>
+   <button class="tablinks" onclick="openCity(event, 'THA')">Heróis adolescentes: adultos</button>
+   <button class="tablinks" onclick="openCity(event, 'VRTH')">Heróis adolescentes de realidade virtual</button>
+</div>
+<div style="font-weight:bold;background-color: blue;text-align: center;color:yellow;padding:10px;">
+   <h1>Anúncio de heróis adolescentes</h1>
+   <p id="anúncios"></p>
+</div>
+
+<div id="TH" class="tabcontent">
+<div style="color: #080691;background-color:#00fcf8;margin:18px;padding:1px;">
+<h3>Heróis adolescentes</h3>
+</div>
+<br>
+<div style="color: #080691;background-color:#00fcf8;margin:18px;padding:10px;">
+   <h1>Casa</h1>
+   <h3>Bem-vindo ao site oficial do Teenager Heroes!</h3>
+   <h4>Um lugar para todos os fãs de Teenager Heroes encontrarem informações!</h4>
+   </div>
+<br>
+<div style="color: #080691;background-color:#00fcf8;margin:18px;padding:10px;">
+   <h2>Sobre heróis adolescentes</h2>
+   <p>Teenager Heroes é uma série de livros de ficção científica e aventura, uma série de livros focada no futuro da ciência e das aventuras. A série apresentava os personagens principais, Li Hui e Hu Jie, os gêmeos chineses em uma aventura incrível em sua cidade, Perle.</p>
+   </div>
+<br>
+<div style="color: #080691;background-color:#00fcf8;margin:18px;padding:10px;">
+   <h2>Onde ler?</h2>
+   <img src="https://github.com/JstMStudio/Teenager-Heroes/blob/Github-Pages/images/wattpad.png?raw=true" alt="Wattpad" width="100" height="100" estilo="float:left;">
+   <br>
+   <h3 style="margin-left:150px;text-align:left;">Wattpad</h3>
+   <br><br>
+   <img src="https://github.com/JstMStudio/Teenager-Heroes/blob/Github-Pages/images/jstmstudio.png?raw=true" alt="JstMStudio" width="100" height="100" estilo="float:left;">
+   <br>
+   <h3 style="margin-left:150px;text-align:left;">JstMStudio</h3>
+     </div>
+<br>
+<div style="color: #080691;background-color:#00fcf8;margin:18px;padding:10px;">
+<h2>Conheça o personagem dos heróis adolescentes!</h2>
+<img src="https://github.com/JstMStudio/Teenager-Heroes/blob/Github-Pages/images/Hu Jie.png?raw=true" alt="Hu Jie" width="100" height=" 100" style="text-align:left;">
+<br><br>
+   <h3 style="margin-left:130px;text-align:left;">Hu Jie</h3>
+   <br><br>
+   <img src="https://github.com/JstMStudio/Teenager-Heroes/blob/Github-Pages/images/Li Hui.png?raw=true" alt="Hu Jie" width="100" height=" 100" style="text-align:left;">
+<br><br>
+   <h3 style="margin-left:130px;text-align:left;">Li Hui</h3>
+     <br><br>
+   <img src="https://github.com/JstMStudio/Teenager-Heroes/blob/Github-Pages/images/Min Li.png?raw=true" alt="Hu Jie" width="100" height=" 100" style="text-align:left;">
+<br><br>
+   <h3 style="margin-left:130px;text-align:left;">Li mínimo</h3>
+   <br><br>
+   <a href="character.html"><button class="button"><span>Confira todos os personagens aqui! </span></button></a>
+</div>
+</div>
+
+<div id="THC" class="tabcontent">
+<div style="color: #1c2b03;background-color:#99f505;margin:18px;padding:1px;">
+<h3>Heróis adolescentes: crianças</h3>
+</div>
+<br>
+<div style="color: #1c2b03;background-color:#99f505;margin:18px;padding:10px;">
+   <h1>Casa</h1>
+   <h3>Bem-vindo ao site oficial de Teenager Heroes: Children!</h3>
+   <h4>Um lugar para todos os heróis adolescentes: fãs de crianças encontrarem informações!</h4>
+   </div>
+<br>
+<div style="color: #1c2b03;background-color:#99f505;margin:18px;padding:10px;">
+   <h2>Sobre heróis adolescentes: crianças</h2>
+   <p>Teenager Heroes é uma série de livros de ficção científica e aventura, uma série de livros focada no futuro da ciência e das aventuras. A série apresentava os personagens principais, Li Hui e Hu Jie, os gêmeos chineses em uma aventura incrível em sua cidade, Perle. Teenager Heroes: Children é uma série de livros, apresentando os gêmeos em seus filhos.</p>
+   </div>
+<br>
+<div style="color: #1c2b03;background-color:#99f505;margin:18px;padding:10px;">
+   <h2>Onde ler?</h2>
+   <img src="https://github.com/JstMStudio/Teenager-Heroes/blob/Github-Pages/images/wattpad.png?raw=true" alt="Wattpad" width="100" height="100" estilo="float:left;">
+   <br>
+   <h3 style="margin-left:150px;text-align:left;">Wattpad</h3>
+   <br><br>
+   <img src="https://github.com/JstMStudio/Teenager-Heroes/blob/Github-Pages/images/jstmstudio.png?raw=true" alt="JstMStudio" width="100" height="100" estilo="float:left;">
+   <br>
+   <h3 style="margin-left:150px;text-align:left;">JstMStudio</h3>
+     </div>
+<br>
+<div style="color: #1c2b03;background-color:#99f505;margin:18px;padding:10px;">
+<h2>Conheça o personagem dos Heróis Adolescentes: Crianças!</h2>
+<img src="https://github.com/JstMStudio/Teenager-Heroes/blob/Github-Pages/images/Hu Jie.png?raw=true" alt="Hu Jie" width="100" height="100" style="text-align:left;">
+<br><br>
+   <h3 style="margin-left:130px;text-align:left;">Hu Jie</h3>
+   <br><br>
+   <img src="https://github.com/JstMStudio/Teenager-Heroes/blob/Github-Pages/images/Li Hui.png?raw=true" alt="Hu Jie" width="100" height="100" style="text-align:left;">
+<br><br>
+   <h3 style="margin-left:130px;text-align:left;">Li Hui</h3>
+     <br><br>
+   <img src="https://github.com/JstMStudio/Teenager-Heroes/blob/Github-Pages/images/Min Li.png?raw=true" alt="Hu Jie" width="100" height="100" style="text-align:left;">
+<br><br>
+   <h3 style="margin-left:130px;text-align:left;">Li mínimo</h3>
+   <br><br>
+   <a href="character.html"><button class="button"><span>Confira todos os personagens aqui! </span></button></a>
+</div>
+</div>
+
+<div id="THA" class="tabcontent">
+<div style="color: #6b1005;background-color:pink;margin:18px;padding:1px;">
+<h3>Heróis adolescentes: adultos</h3>
+</div>
+<br>
+<div style="color: #6b1005;background-color:pink;margin:18px;padding:10px;">
+   <h1>Casa</h1>
+   <h3>Bem-vindo ao site oficial do Teenager Heroes: Adult!</h3>
+   <h4>Um lugar para todos os heróis adolescentes: fãs adultos encontrarem informações!</h4>
+   </div>
+<br>
+<div style="color: #6b1005;background-color:pink;margin:18px;padding:10px;">
+   <h2>Sobre heróis adolescentes: adultos</h2>
+   <p>Teenager Heroes é uma série de livros de ficção científica e aventura, uma série de livros focada no futuro da ciência e das aventuras. A série apresentava os personagens principais, Li Hui e Hu Jie, os gêmeos chineses em uma incrível aventura em sua cidade, Perle. Teenager Heroes: Adult é uma série de livros, apresentando os gêmeos em sua idade adulta para todos os fãs adultos e leitores de Teenager Heroes.</p>
+   </div>
+<br>
+<div style="color: #6b1005;background-color:pink;margin:18px;padding:10px;">
+   <h2>Onde ler?</h2>
+   <img src="https://github.com/JstMStudio/Teenager-Heroes/blob/Github-Pages/images/wattpad.png?raw=true" alt="Wattpad" width="100" height="100" estilo="float:left;">
+   <br>
+   <h3 style="margin-left:150px;text-align:left;">Wattpad</h3>
+   <br><br>
+   <img src="https://github.com/JstMStudio/Teenager-Heroes/blob/Github-Pages/images/jstmstudio.png?raw=true" alt="JstMStudio" width="100" height="100" estilo="float:left;">
+   <br>
+   <h3 style="margin-left:150px;text-align:left;">JstMStudio</h3>
+     </div>
+<br>
+<div style="color: #6b1005;background-color:pink;margin:18px;padding:10px;">
+<h2>Conheça o personagem dos Heróis Adolescentes: Adulto!</h2>
+<img src="https://github.com/JstMStudio/Teenager-Heroes/blob/Github-Pages/images/Hu Jie.png?raw=true" alt="Hu Jie" width="100" height=" 100" style="text-align:left;">
+<br><br>
+   <h3 style="margin-left:130px;text-align:left;">Hu Jie</h3>
+   <br><br>
+   <img src="https://github.com/JstMStudio/Teenager-Heroes/blob/Github-Pages/images/Li Hui.png?raw=true" alt="Hu Jie" width="100" height=" 100" style="text-align:left;">
+<br><br>
+   <h3 style="margin-left:130px;text-align:left;">Li Hui</h3>
+     <br><br>
+   <img src="https://github.com/JstMStudio/Teenager-Heroes/blob/Github-Pages/images/Min Li.png?raw=true" alt="Hu Jie" width="100" height=" 100" style="text-align:left;">
+<br><br>
+   <h3 style="margin-left:130px;text-align:left;">Li mínimo</h3>
+   <br><br>
+   <a href="character.html"><button class="button"><span>Confira todos os personagens aqui! </span></button></a>
+</div>
+</div>
+
+<div id="VRTH" class="tabcontent">
+<div style="color: purple;background-color:#a4fc00;margin:18px;padding:1px;">
+<h3>Heróis adolescentes de realidade virtual</h3>
+</div>
+<br>
+<div style="color: purple;background-color:#a4fc00;margin:18px;padding:10px;">
+   <h1>Casa</h1>
+   <h3>Bem-vindo ao site oficial do VR Teenager Heroes!</h3>
+   <h4>Um lugar para todos os fãs de VR Teenager Heroes encontrarem informações!</h4>
+   </div>
+<br>
+<div style="color: purple;background-color:#a4fc00;margin:18px;padding:10px;">
+   <h2>Sobre heróis adolescentes de realidade virtual</h2>
+   <p>Teenager Heroes é uma série de livros de ficção científica e aventura, uma série de livros focada no futuro da ciência e das aventuras. A série apresentava os personagens principais, Li Hui e Hu Jie, os gêmeos chineses em uma aventura incrível em sua cidade, Perle. VR Teenager Heroes é uma série de livros que mostra os gêmeos entrando em um novo mundo de realidade virtual, chamado VRWorld.</p>
+   </div>
+<br>
+<div style="color: purple;background-color:#a4fc00;margin:18px;padding:10px;">
+   <h2>Onde ler?</h2>
+   <img src="https://github.com/JstMStudio/Teenager-Heroes/blob/Github-Pages/images/wattpad.png?raw=true" alt="Wattpad" width="100" height="100" estilo="float:left;">
+   <br>
+   <h3 style="margin-left:150px;text-align:left;">Wattpad</h3>
+   <br><br>
+   <img src="https://github.com/JstMStudio/Teenager-Heroes/blob/Github-Pages/images/jstmstudio.png?raw=true" alt="JstMStudio" width="100" height="100" estilo="float:left;">
+   <br>
+   <h3 style="margin-left:150px;text-align:left;">JstMStudio</h3>
+     </div>
+<br>
+<div style="color: purple;background-color:#a4fc00;margin:18px;padding:10px;">
+<h2>Conheça o personagem dos heróis adolescentes de realidade virtual!</h2>
+<img src="https://github.com/JstMStudio/Teenager-Heroes/blob/Github-Pages/images/Hu Jie.png?raw=true" alt="Hu Jie" width="100" height="100" style="text-align:left;">
+<br><br>
+   <h3 style="margin-left:130px;text-align:left;">Hu Jie</h3>
+   <br><br>
+   <img src="https://github.com/JstMStudio/Teenager-Heroes/blob/Github-Pages/images/Li Hui.png?raw=true" alt="Hu Jie" width="100" height="100" style="text-align:left;">
+<br><br>
+   <h3 style="margin-left:130px;text-align:left;">Li Hui</h3>
+     <br><br>
+   <img src="https://github.com/JstMStudio/Teenager-Heroes/blob/Github-Pages/images/Min Li.png?raw=true" alt="Hu Jie" width="100" height="100" style="text-align:left;">
+<br><br>
+   <h3 style="margin-left:130px;text-align:left;">Li mínimo</h3>
+   <br><br>
+   <a href="character.html"><button class="button"><span>Confira todos os personagens aqui! </span></button></a>
+</div>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<script src="announcement.js"></script>
+</body>
+</html> 

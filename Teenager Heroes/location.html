@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Demo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+font-family: Arial;
+padding: 15px;
+background-color: #00C9A7;
+background-image: url("https://github.com/JstMStudio/Teenager-Heroes/blob/Github-Pages/images/background2.jpeg?raw=true");
+background-repeat:no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+  background-size: cover;
+    background-position: center;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #abff03;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  color: #961509;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid red;
+  border-top: none;
+  text-align: center;
+  height: 100%;
+  background-color: black;
+background-repeat: no-repeat;
+background-size: 100% auto;
+    background-position: center;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 4px 4px 4px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #ffd3ec;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+  
+  .collapsible {
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align:  center;
+  outline: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.active, .collapsible:hover {
+  background-color: green;
+}
+
+.content1 {
+  padding: 18px;
+  display: none;
+  overflow: hidden;
+  background-color: yellow;
+  text-align: center;
+}
+
+.content1 ul {
+text-align: left;
+}
+
+li {
+text-align:left;
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   <h2 style="color:#c4f7fb;text-align:center;">Heróis adolescentes</h2>
+   <a href="index.html">Página inicial</a>
+   <a href="about.html">Sobre</a>
+   <a href="news.html">Notícias</a>
+   <a href="character.html">Personagem</a>
+   <a href="story.html">História</a>
+   <a href="location.html">Localização</a>
+   <a href="vehicles.html">Veículos</a>
+</div>
+
+<div class="tab">
+<button class="tablinks" onclick="openNav()">&#9776;</button>
+   <button class="tablinks" onclick="openCity(event, 'TH')">Heróis adolescentes</button>
+   <button class="tablinks" onclick="openCity(event, 'THC')">Heróis adolescentes: crianças</button>
+   <button class="tablinks" onclick="openCity(event, 'THA')">Heróis adolescentes: adultos</button>
+   <button class="tablinks" onclick="openCity(event, 'VRTH')">Heróis adolescentes de realidade virtual</button>
+</div>
+<div style="font-weight:bold;background-color: blue;text-align: center;color:yellow;padding:10px;">
+   <h1>Anúncio de heróis adolescentes</h1>
+   <p id="anúncios"></p>
+</div>
+
+<div id="TH" class="tabcontent">
+<div style="color: #080691;background-color:#00fcf8;margin:18px;padding:1px;">
+<h3>Heróis adolescentes</h3>
+</div>
+<br>
+<div style="color: #080691;background-color:#00fcf8;margin:18px;padding:10px;">
+  <h1>Locais</h1>
+<p>A série de livros Teenager Heroes contém muitos locais incríveis, desenvolvidos e construídos pela equipe de Teenager Heroes. Todos os locais listados aqui são os principais locais estreados em muitas temporadas de Teenager Heroes. Nós contém uma lista de todos os locais em Teenager Heroes aqui.</p>
+</div>
+<br>
+<div style="color: #080691;background-color:#00fcf8;margin:18px;padding:10px;border-style: solid;border-width: 5px;border-color: purple;">
+<h1>Perle</h1>
+<p>Perle é a cidade natal de Li Hui e Hu Jie, onde eles cresceram. Perle é uma cidade avançada. Perle é a principal cidade da 1ª temporada de Teenager Heroes. Perle apresentava o ambiente melhor e mais limpo. Perle se passa em um lugar no futuro.</p>
+<br>
+   <h3>Lugares</h3>
+   <br>
+   <li>VRzoo: VRzoo é um zoológico em Perle. É um zoológico de realidade virtual para os visitantes verem os animais do zoológico usando a realidade virtual.</li>
+   <br>
+   <li>VRmuseum: VRmuseum é um grande museu em Perle. É um museu de realidade virtual para que todos possam visitar o museu inteiro sem andar e visitar tudo em exibição usando realidade virtual.</li>
+   <br>
+   <li>VRmall: VRmall é um mega shopping center em Perle. É um shopping de realidade virtual para que todos possam visitar e comprar coisas. Os visitantes podem usar a realidade virtual para visitar o shopping de realidade virtual e comprar coisas.</li>
+   <br>
+   <li>Floresta: Perle também tem uma mega floresta. A floresta Perle cresce muitos tipos de árvores, de mirtilos a bananas. A megafloresta também ajuda a manter o meio ambiente limpo.</li>
+   <br>
+   <li>VRschool: Perle também tem uma escola. As crianças Perle poderiam frequentar a escola para aprender em realidade virtual. Perle fornece a melhor tecnologia para os alunos estudarem.</li>
+   <br>
+   <li>VRcinema: Perle também tem um cinema para todos os cidadãos. O cinema Perle permite que todos os espectadores assistam a um filme em realidade virtual. Os observadores podem assistir a filmes no VRcinema com sua família e amigos.</li>
+   <br>
+   <li>VRbank: Perle também tem um banco. O VRbank permite que todos economizem dinheiro no banco dentro do mundo da realidade virtual. O VRbank também permite que todos economizem dinheiro no banco de realidade virtual.</li>
+   <br>
+   <li>Central Pacífica: Central Pacífica é o bairro onde moram as casas dos gêmeos. Peaceful Central é um bairro maravilhoso e limpo.</li>
+</div>
+</div>
+
+<div id="THC" class="tabcontent">
+<div style="color: #1c2b03;background-color:#99f505;margin:18px;padding:1px;">
+<h3>Heróis adolescentes: crianças</h3>
+</div>
+<br>
+   <div style="color: #1c2b03;background-color:#99f505;margin:18px;padding:10px;">
+  <h1>Locais</h1>
+<p>Teenager Heroes: A série de livros infantis atualmente contém muitos locais incríveis, desenvolvidos e construídos pela equipe de Teenager Heroes. Todos os locais listados aqui são os principais locais estreados em muitas temporadas de Teenager Heroes: Children. Nós contém uma lista de todos os locais em Teenager Heroes: Children aqui.</p>
+  </div>
+  <br>
+<div style="color: #1c2b03;background-color:#99f505;margin:18px;padding:10px;border-style: solid;border-width: 5px;border-color: red;">
+<h1>Perle</h1>
+<p>Perle é a cidade natal de Li Hui e Hu Jie, onde eles cresceram. Perle é uma cidade avançada. Perle é a principal cidade da 1ª temporada de Teenager Heroes. Perle apresentava o ambiente melhor e mais limpo. Perle se passa em um lugar no futuro.</p>
+<br>
+   <h3>Lugares</h3>
+   <br>
+   <li>VRzoo: VRzoo é um zoológico em Perle. É um zoológico de realidade virtual para os visitantes verem os animais do zoológico usando a realidade virtual.</li>
+   <br>
+   <li>VRmuseum: VRmuseum é um grande museu em Perle. É um museu de realidade virtual para que todos possam visitar o museu inteiro sem andar e visitar tudo em exibição usando realidade virtual.</li>
+   <br>
+   <li>VRmall: VRmall é um mega shopping center em Perle. É um shopping de realidade virtual para que todos possam visitar e comprar coisas. Os visitantes podem usar a realidade virtual para visitar o shopping de realidade virtual e comprar coisas.</li>
+   <br>
+   <li>Floresta: Perle também tem uma mega floresta. A floresta Perle cresce muitos tipos de árvores, de mirtilos a bananas. A megafloresta também ajuda a manter o meio ambiente limpo.</li>
+   <br>
+   <li>VRschool: Perle também tem uma escola. As crianças Perle poderiam frequentar a escola para aprender em realidade virtual. Perle fornece a melhor tecnologia para os alunos estudarem.</li>
+   <br>
+   <li>VRcinema: Perle também tem um cinema para todos os cidadãos. O cinema Perle permite que todos os espectadores assistam a um filme em realidade virtual. Os observadores podem assistir a filmes no VRcinema com sua família e amigos.</li>
+   <br>
+   <li>VRbank: Perle também tem um banco. O VRbank permite que todos economizem dinheiro no banco dentro do mundo da realidade virtual. O VRbank também permite que todos economizem dinheiro no banco de realidade virtual.</li>
+   <br>
+   <li>Central Pacífica: Central Pacífica é o bairro onde moram as casas dos gêmeos. Peaceful Central é um bairro maravilhoso e limpo.</li>
+</div>
+</div>
+
+<div id="THA" class="tabcontent">
+<div style="color: #6b1005;background-color:pink;margin:18px;padding:1px;">
+<h3>Heróis adolescentes: adultos</h3>
+</div>
+<br>
+   <div style="color: #6b1005;background-color:pink;margin:18px;padding:10px;">
+     <h1>Locais</h1>
+<p>Teenager Heroes: A série de livros para adultos também contém muitos locais incríveis, desenvolvidos e construídos pela equipe de Teenager Heroes: Adult. Todos os locais listados aqui são os principais locais estreados em muitas temporadas de Teenager Heroes: Adult. Nós contém uma lista de todos os locais em Teenager Heroes: Adult aqui.</p>
+  </div>
+    <br>
+<div style="color: #6b1005;background-color:pink;margin:18px;padding:10px;border-style: solid;border-width: 5px;border-color: red;">
+<h1>Perle</h1>
+<p>Perle é a cidade natal de Li Hui e Hu Jie, onde eles cresceram. Perle é uma cidade avançada. Perle é a principal cidade da 1ª temporada de Teenager Heroes. Perle apresentava o ambiente melhor e mais limpo. Perle se passa em um lugar no futuro.</p>
+<br>
+   <h3>Lugares</h3>
+   <br>
+   <li>VRzoo: VRzoo é um zoológico em Perle. É um zoológico de realidade virtual para os visitantes verem os animais do zoológico usando a realidade virtual.</li>
+   <br>
+   <li>VRmuseum: VRmuseum é um grande museu em Perle. É um museu de realidade virtual para que todos possam visitar o museu inteiro sem andar e visitar tudo em exibição usando realidade virtual.</li>
+   <br>
+   <li>VRmall: VRmall é um mega shopping center em Perle. É um shopping de realidade virtual para que todos possam visitar e comprar coisas. Os visitantes podem usar a realidade virtual para visitar o shopping de realidade virtual e comprar coisas.</li>
+   <br>
+   <li>Floresta: Perle também tem uma mega floresta. A floresta Perle cresce muitos tipos de árvores, de mirtilos a bananas. A megafloresta também ajuda a manter o meio ambiente limpo.</li>
+   <br>
+   <li>VRschool: Perle também tem uma escola. As crianças Perle poderiam frequentar a escola para aprender em realidade virtual. Perle fornece a melhor tecnologia para os alunos estudarem.</li>
+   <br>
+   <li>VRcinema: Perle também tem um cinema para todos os cidadãos. O cinema Perle permite que todos os espectadores assistam a um filme em realidade virtual. Os observadores podem assistir a filmes no VRcinema com sua família e amigos.</li>
+   <br>
+   <li>VRbank: Perle também tem um banco. O VRbank permite que todos economizem dinheiro no banco dentro do mundo da realidade virtual. O VRbank também permite que todos economizem dinheiro no banco de realidade virtual.</li>
+   <br>
+   <li>Central Pacífica: Central Pacífica é o bairro onde moram as casas dos gêmeos. Peaceful Central é um bairro maravilhoso e limpo.</li>
+</div>
+</div>
+
+<div id="VRTH" class="tabcontent">
+<div style="color: purple;background-color:#a4fc00;margin:18px;padding:1px;">
+<h3>Heróis adolescentes de realidade virtual</h3>
+</div>
+<br>
+   <div style="color: purple;background-color:#a4fc00;margin:18px;padding:10px;">
+  <h1>Locais</h1>
+<p>A série de livros VR Teenager Heroes contém muitos locais incríveis, desenvolvidos e construídos pela equipe de Teenager Heroes. Todos os locais listados aqui são os principais locais estreados em muitas temporadas de VR Teenager Heroes. Atualmente, contém uma lista de todos os locais em VR Teenager Heroes aqui.</p>
+  </div>
+    <br>
+<div style="color: purple;background-color:#a4fc00;margin:18px;padding:10px;border-style: solid;border-width: 5px;border-color: red;">
+<h1>Perle</h1>
+<p>Perle é a cidade natal de Li Hui e Hu Jie, onde eles cresceram. Perle é uma cidade avançada. Perle é a principal cidade da 1ª temporada de Teenager Heroes. Perle apresentava o ambiente melhor e mais limpo. Perle se passa em um lugar no futuro.</p>
+<br>
+   <h3>Lugares</h3>
+   <br>
+   <li>VRzoo: VRzoo é um zoológico em Perle. É um zoológico de realidade virtual para os visitantes verem os animais do zoológico usando a realidade virtual.</li>
+   <br>
+   <li>VRmuseum: VRmuseum é um grande museu em Perle. É um museu de realidade virtual para que todos possam visitar o museu inteiro sem andar e visitar tudo em exibição usando realidade virtual.</li>
+   <br>
+   <li>VRmall: VRmall é um mega shopping center em Perle. É um shopping de realidade virtual para que todos possam visitar e comprar coisas. Os visitantes podem usar a realidade virtual para visitar o shopping de realidade virtual e comprar coisas.</li>
+   <br>
+   <li>Floresta: Perle também tem uma mega floresta. A floresta Perle cresce muitos tipos de árvores, de mirtilos a bananas. A megafloresta também ajuda a manter o meio ambiente limpo.</li>
+   <br>
+   <li>VRschool: Perle também tem uma escola. As crianças Perle poderiam frequentar a escola para aprender em realidade virtual. Perle fornece a melhor tecnologia para os alunos estudarem.</li>
+   <br>
+   <li>VRcinema: Perle também tem um cinema para todos os cidadãos. O cinema Perle permite que todos os espectadores assistam a um filme em realidade virtual. Os observadores podem assistir a filmes no VRcinema com sua família e amigos.</li>
+   <br>
+   <li>VRbank: Perle também tem um banco. O VRbank permite que todos economizem dinheiro no banco dentro do mundo da realidade virtual. O VRbank também permite que todos economizem dinheiro no banco de realidade virtual.</li>
+   <br>
+   <li>Central Pacífica: Central Pacífica é o bairro onde moram as casas dos gêmeos. Peaceful Central é um bairro maravilhoso e limpo.</li>
+</div>
+    <br>
+<div style="color: purple;background-color:#a4fc00;margin:18px;padding:10px;border-style: solid;border-width: 5px;border-color: red;">
+<h1>VRWorld</h1>
+<p>VRWorld é um mundo de realidade virtual na série de livros VR Teenager Heroes. O VRWorld é um mundo de realidade virtual avançado e amigável à privacidade que Li Hui, Hu Jie, Min Li e muitos outros usam e vivem em suas vidas. VRWorld é o local principal para a série de livros VR Teenager Heroes.</p>
+<br>
+   <h3>Lugares</h3>
+   <br>
+   <li>VRLibrary: VRLibrary é uma biblioteca baseada em realidade virtual. VRLibrary é um lugar onde os perfis virtuais de Li Hui e Hu Jie vão para ler livros silenciosamente.</li>
+   <br>
+   <li>VRMall: VRMall é um shopping dentro do mundo de realidade virtual do VRWorld. O VRMall é um local onde os gêmeos e seus amigos fazem suas compras, é um local semelhante às plataformas de e-commerce de hoje em dia.</li>
+   <br>
+   <li>VRBank: O VRBank é um lugar onde todos economizam dinheiro em um mundo de realidade virtual. O VRBank é um lugar onde todos podem verificar sua carteira de realidade virtual em tempo real na rede.</li>
+   <br>
+   <li>VRCinema: VRCinema é um lugar onde todos assistem a filmes em uma sala no mundo da realidade virtual. O VRCinema é um lugar onde você pode reservar um ingresso para uma sala assistindo a um filme específico.</li>
+   <br>
+   <li>VRMuseum: VRMuseum é um lugar onde todos podem visitar para ver artes, itens e coisas com importância histórica e científica no mundo da realidade virtual sem sair de casa.</li>
+   <br>
+   <li>VRSchool: VRSchool é o lugar onde os gêmeos aprendem coisas, encontram seus amigos e passam a maior parte do tempo. VRSchool é uma escola avançada baseada no mundo da realidade virtual.</li>
+</div>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<script src="announcement.js"></script>
+  <!-- Put this at the end of the <body> tag -->
+<script src="https://swetrix.org/swetrix.js" defer></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    swetrix.init('tUOZrSzLs6uA')
+    swetrix.trackViews()
+  })
+</script>
+<noscript>
+  <img
+    src="https://api.swetrix.com/log/noscript?pid=tUOZrSzLs6uA"
+    alt=""
+    referrerpolicy="no-referrer-when-downgrade"
+  />
+</noscript>
+
+</body>
+</html> 
