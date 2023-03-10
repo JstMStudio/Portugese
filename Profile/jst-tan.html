@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jst Tan</title>
+    <style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: blue;
+  width: 30%;
+  height: 100%;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: yellow;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: green;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 12px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 100%;
+  display: none;
+  text-align:center;
+  color: cyan;
+  background-color: darkblue;
+}
+
+/* Clear floats after the tab */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.tabcontent a {
+color: cyan;
+}
+    </style>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+<img src="https://i.ibb.co/QKqKHWR/profile.png" style="width:320px;height:170px;float:left;">
+  <br>
+  <div style="float:center;height:120px;color:blue;">
+  <h1>Jst Tan</h1>
+  <h4>Perfil oficial do Jst Tan no perfil do JstMStudio, o proprietário do JstMStudio.</h4>
+  <i class='bx bx-location-plus'></i> Malásia
+  </div>
+  <br><br><br><br>
+  <hr>
+<br><br>
+<div class="tab">
+  <button class="tablinks" onmouseover="openCity(event, 'Perfil')">Perfil</button>
+  <button class="tablinks" onmouseover="openCity(event, 'Community')">Comunidade</button>
+  <button class="tablinks" onmouseover="openCity(event, 'Social')">Social</button>
+  <button class="tablinks" onmouseover="openCity(event, 'Uploads')">Uploads</button>
+</div>
+
+<div id="Perfil" class="tabcontent">
+<br>
+<h1>Sobre nós</h1>
+  <p>Sou Jst Tan da Malásia, proprietário do JstMStudio. Sou desenvolvedor web que programei em HTML, CSS e JavaScript, escritor de histórias, criador de vídeos no YouTube e editor wiki no Miraheze. Meu principal hobby é programar e meu aniversário é dia 21 de maio.</p>
+  <br>
+  <hr style="width:40%;margin: auto;">
+  <br>
+  <h2>Educação</h2>
+  <ul>
+  <li>Privado</li>
+  </ul>
+  <br>
+  <hr style="width:40%;margin: auto;">
+  <br>
+  <h2>Informações de contato</h2>
+<ul style="text-align:center;">
+<a href="https://www.facebook.com/JestonJst"><li>Facebook</li></a>
+<a href="https://www.instagram.com/jestonjst/"><li>Instagram</li></a>
+<a href="https://twitter.com/jestonjst"><li>Twitter</li></a>
+<a href="https://mastodon.social/web/@jsttan"><li>Mastodonte</li></a>
+<a href="https://www.guilded.gg/profile/Qd5XEDk4"><li>Guildado</li></a>
+</ul>
+  <br>
+  <hr style="width:40%;margin: auto;">
+  <br>
+  <h2>Mídias sociais</h2>
+  <ul style="text-align:center;">
+<a href="https://www.facebook.com/JestonJst"><li>Facebook</li></a>
+<a href="https://www.instagram.com/jestonjst/"><li>Instagram</li></a>
+<a href="https://twitter.com/jestonjst"><li>Twitter</li></a>
+<a href="https://mastodon.social/web/@jsttan"><li>Mastodonte</li></a>
+<a href="https://www.guilded.gg/profile/Qd5XEDk4"><li>Guildado</li></a>
+</ul>
+  <br>
+    <br>
+  <hr style="width:40%;margin: auto;">
+  <br>
+  <h2>Membros da família</h2>
+  <ul>
+  <li>Privado</li>
+  </ul>
+  <br>
+  <hr style="width:40%;margin: auto;">
+  <br>
+  <h2>Idiomas</h2>
+  <ul>
+  <li>Inglês</li>
+  <li>Chinês</li>
+  </ul>
+</div>
+
+<div id="Community" class="tabcontent">
+<br>
+<h1>Comunidade</h1>
+  <p>Bem-vindo à comunidade oficial de Jst Tan. Um lugar para discutir sobre Jst Tan e para os fãs e amigos de Jst Tan.</p>
+  <br>
+  <hr>
+  <br>
+  <h2>Fãs</h2>
+  <ul>
+  <li>Exemplo</li>
+  <li>Exemplo</li>
+  </ul>
+  <br>
+  <hr>
+  <br>
+  <h2>Seção de comentários</h2>
+  <div id="graphcomment"></div>
+<script type="text/javascript">
+
+  /* - - - VARIÁVEIS DE CONFIGURAÇÃO - - - */
+
+  var __semio__params = {
+    graphcommentId: "Official-Websites", // verifique se o id é seu
+
+    comportamento: {
+      // ALTAMENTE RECOMENDADO
+      // uid: "...", // identificador uniq para o tópico de comentários em sua página (ex: seu id de página)
+    },
+
+    // configure suas variáveis ​​aqui
+
+  }
+
+  /* - - - NÃO EDITAR ABAIXO DESTA LINHA - - - */
+
+  function __semio__onload() {
+    __semio__gc_graphlogin(__semio__params)
+  }
+
+
+  (função(){
+    var gc = document.createElement('script'); gc.type = 'texto/javascript'; gc.async = true;
+    gc.onload = __semio__onload; gc.defer = true; gc.src = 'https://integration.graphcomment.com/gc_graphlogin.js?' + Data.agora();
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(gc);
+  })();
+  
+
+</script>
+<br>
+</div>
+
+<div id="Social" class="tabcontent">
+<br>
+<h1>Social</h1>
+  <p>Bem-vindo ao Jst Tan social! Um lugar para conferir todos os posts feitos por Jst Tan. Um lugar para obter uma prévia, anúncios e atualizações de Jst Tan. </p>
+  <br>
+  <hr>
+  <br>
+  <h2>Postagens</h2>
+  <br>
+  <div style="background-color:yellow;padding:16px;color:blue;">
+        <!--- Altere isso para o título do seu post --->
+        <h3 id="firstpost">Esta é minha primeira postagem.</h3><br>
+        <!--- Mude isso para a legenda do seu post --->
+        <p>Olá! Este é o meu primeiro post. Estou feliz em ser Projeto Social.</p><br>
+        <!--- Altere isso para o texto ou descrição do seu post --->
+        <hr style="width:40%;text-align:center;margin-left:auto;margin-right:auto;">
+        <div data-lyket-type="like" data-lyket-namespace="template" data-lyket-id="everybody-like-now" data-lyket-color="cyan" />
+        <button onclick="copyToClipboard()">Copiar link</button>
+        <script src="https://unpkg.com/@lyket/widget@latest/dist/lyket.js?apiKey=pt_eb09eedd724c781b92b6e026928ca4"></script>
+
+        <script>
+        function copyToClipboard(texto) {
+            var inputc = document.body.appendChild(document.createElement("input"));
+            inputc.value = window.location.href;
+            inputc.focus();
+            inputc.select();
+            document.execCommand('copy');
+            inputc.parentNode.removeChild(inputc);
+            alert("URL Copiado.");
+        }
+        </script>
+        </div>
+        </div>
+<br>
+</div>
+
+<div id="Uploads" class="tabcontent">
+<br>
+<h1>Envios</h1>
+  <p>Bem-vindo aos uploads de Jst Tan! Um lugar para conferir todos os uploads feitos por Jst Plataformas Tan para JstMStudio. Um lugar para conferir todos os conteúdos carregados e feitos pelo JstMStudio. </p>
+   <br>
+   <hr>
+   <br>
+   <h2>Livros</h2>
+   <ul>
+   <li>Exemplo</li>
+   <li>Exemplo</li>
+   </ul>
+   <br>
+   <hr>
+   <br>
+   <h2>Vídeo</h2>
+   <ul>
+   <li>Exemplo</li>
+   <li>Exemplo</li>
+  </ul>
+  <br>
+</div>
+
+<div class="clearfix"></div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+</body>
+</html>
